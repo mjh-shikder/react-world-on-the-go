@@ -7,15 +7,18 @@ const Country = ({ country }) => {
   console.log(country.area.area);
 
     const handleVisited = () => {
+        // 1st system
     //   // if(visited) is equavilat to if (visited === true)
     //   if (visited) {
     //     setVisited(false)
     //   }
     //   else {
     //       setVisited(true)
-        //   }
-        
-        setVisited(visited ? false : true);
+    //   }
+        // 2nd system
+    //   setVisited(visited ? false : true);
+        // 3rd system  
+      setVisited(!visited)  
   };
 
   return (
