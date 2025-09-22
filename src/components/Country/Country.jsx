@@ -22,7 +22,7 @@ const Country = ({ country }) => {
   };
 
   return (
-    <div className="country">
+    <div className={`country ${visited && 'country-visited'}`  }>
       <img
         className="img"
         src={country.flags.flags.svg}
