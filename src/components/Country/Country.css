@@ -1,0 +1,12 @@
+.country{
+   
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    background-color: dimgrey;
+}
+
+.img{
+    width: 300px;
+}
