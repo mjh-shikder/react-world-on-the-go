@@ -21,8 +21,9 @@ const Country = ({ country }) => {
       setVisited(!visited)  
   };
 
-  return (
-    <div className={`country ${visited && 'country-visited'}`  }>
+    return (
+                    //{`country ${visited ? 'country-visited' : ''}`} this will also work
+    <div className={`country ${visited && 'country-visited'}`}>
       <img
         className="img"
         src={country.flags.flags.svg}
