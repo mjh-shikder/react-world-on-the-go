@@ -18,6 +18,11 @@ const Countries = ({ countriesPromise }) => {
     <div>
           <h1>In the Countries: {countries.length} </h1>
           <h2>Total Country Visited: {vesitedCountryies.length} </h2>
+          <ol>
+              {
+                  vesitedCountryies.map(country => <li>{country.name.common }</li>)
+              }
+          </ol>
       <div className="countries">
         {countries.map((country) => (
             <Country key={country.cca3.cca3} country={country}
